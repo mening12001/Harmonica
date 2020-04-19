@@ -11,7 +11,7 @@ In the considered discrete case, obviously, the summation will not have infinity
      
       [a1, a2, ..., an, b1, b2, ..., bn, a0] 
       
-      where n = (number_of_samples_of_function - 1) / 2 ) / 2 - 1   and ai, bj = coeficients_of_sinusoids 
+      where n = ((number_of_samples_of_function - 1) / 2 ) -1) * 2   and ai, bj = coeficients_of_sinusoids 
       
 Where the corresponding fenotype, given the genotype defined above is obtained as fallows:
 
