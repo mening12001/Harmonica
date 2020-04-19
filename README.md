@@ -1,7 +1,7 @@
 # Harmonica
 # Sinusoidal Symbolic Regression(POC)
 
-This project is experimental in nature. You should view this implementation simply as a proof of concept. This "framework" gives you the possibility to define/reveal a function that interpolates a given set of points in terms of sinusoids/harmonics. It implements in a way, "lazily", symbolic regression. 
+This project is experimental in nature. You should view this implementation simply as a proof of concept. This "framework" gives you the possibility to define/reveal a function that interpolates a given set of points in terms of sinusoids/harmonics. It implements in a way, "lazily", symbolic regression. This is an exploration of the frequency space practically.
 
 As the mathematician Joseph Fourier proved, any given function, no matter how irregular in variation, could be expressed as a weighted summation of sinusoids. This can be expressed as fallows:
 
