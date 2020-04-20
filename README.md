@@ -20,6 +20,15 @@ Where the corresponding fenotype, given the genotype defined above is obtained a
      
       where T = number_of_samples_of_function - 1
 
+Regarding the fitness function, it is based on the RMSD in the fallowing manner:
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/eeb88fa0f90448e9d1a67cd7a70164f674aeb300)
+
+     fitness_function(fenotype) = 100 / (1 + RMSD)
+     
+     where y = set_target_points_to_be_interpolated, ŷ = set_points_obtained_after_fenotype_evaluation and T = nr_of_target_points
+
+ 
 # First Example
 
 As a first example, in order to test the validaity of the implementation, it is used as points to be interpolated, the points obtained of a simple sinusoidal of frequency 1Hz, sampled at 6hz. Therefore, it is visualized as fallows:
@@ -56,3 +65,4 @@ As expected, the function that is revealed is "sofisticated" also:              
  ![Image of Yaktocat](https://i.imgur.com/FiRaG2R.png)
 
    
+Don't retain yourself from participating, from developing further this intriguing project. Thank you!
