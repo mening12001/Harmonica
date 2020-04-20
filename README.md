@@ -18,7 +18,7 @@ Where the corresponding fenotype, given the genotype defined above is obtained a
 
       a1*cos(2 * pi * 1 * x/T) + a2*cos(2 * pi * 2 * x/T) + ... + an*cos(2 * pi * n * x/T) + b1*sin(2 * pi * 1 * x/T) + b2*sin(2 * pi * 2 * x/T) + ... + bn*sin(2 * pi * n * x/T) + a0
      
-      where T = number_of_samples_of_function - 1
+      where T = number_of_samples_of_function - 1  or nr_of_target_points - 1
 
 Regarding the fitness function, it is based on the RMSD in the fallowing manner:
 
