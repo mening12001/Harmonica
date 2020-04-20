@@ -7,7 +7,8 @@ As the mathematician Joseph Fourier proved, any given function, no matter how ir
 
 ![Image of Yaktocat](https://www.dspguide.com/graphics/E_13_4.gif)
 
-In the considered discrete case, obviously, the summation will not have infinity as a limit, but the number of points given to be interpolated(sample frequency) divided by 2; refering to nyquist limit. The implementation is based on a genetic algorithm, as expected. Therefore, the genotype is defined as fallows:
+In the considered discrete case, obviously, the summation will not have infinity as a limit, but the number of points given to be interpolated(sample frequency) divided by 2; refering to nyquist limit(the formula implies some other adjustments for the discrete case). 
+The problem that needs to be solved is that of finding the coeficients an, bn, a0; such that the overall obtained function x(t) interpolates as accurately as possible the given set of points. The intention is to avoid the conventional way of determining the values of the parameters(by the means of Fourier Transform), proposing a different aproach by viewing this conundrum as an optimization problem. The implementation is based on a genetic algorithm, as expected. Therefore, the genotype is defined as fallows:
      
       [a1, a2, ..., an, b1, b2, ..., bn, a0] 
       
