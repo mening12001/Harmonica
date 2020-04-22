@@ -3,7 +3,7 @@
 
 This project is experimental in nature. You should view this implementation simply as a proof of concept. This "framework" gives you the possibility to define/reveal a function that interpolates a given set of points in terms of sinusoids/harmonics. It implements in a way, "lazily", symbolic regression. This is an exploration of the frequency space practically.
 
-As the mathematician Joseph Fourier proved, any given function, no matter how irregular in variation, could be expressed as a weighted summation of sinusoids. I was intrigued beyound measure by this fact while I was still in college, concluding that sinusoids play a special part in the grand scheme of the universe. This affirmation can be expressed as fallows:
+As the mathematician Joseph Fourier proved, any given function, no matter how irregular in variation, could be expressed as a weighted summation of sinusoids. I was intrigued beyound measure by this fact while I was still in college, concluding that sinusoids play a special and important part in the grand scheme of the universe. This affirmation can be expressed as fallows:
 
 ![Image of Yaktocat](https://www.dspguide.com/graphics/E_13_4.gif)
 
