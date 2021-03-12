@@ -73,7 +73,7 @@ class Genetica:
         if random_gene != self.nr_of_genes:
             genotype[random_gene] = random.uniform(self.amplitude_bounds[0], self.amplitude_bounds[1])
         else:
-            genotype[random_gene] = random.uniform(self.constant_bounds[0], self.amplitude_bounds[1])
+            genotype[random_gene] = random.uniform(self.constant_bounds[0], self.constant_bounds[1])
         return genotype
 
     def crossover(self, genotype1, genotype2):
@@ -163,8 +163,9 @@ class Genetica:
             #individual2 = self.uniform_mutate(individual2)
             next_generation.append(individual1)
             next_generation.append(individual2)
-            next_generation.extend(previous_population)
-            next_generation = sorted(next_generation, key=self.compute_fitness, reverse=True)[:population_size]
+
+        next_generation.extend(previous_population)
+        next_generation = sorted(next_generation, key=self.compute_fitness, reverse=True)[:population_size]
 
         return next_generation
 
